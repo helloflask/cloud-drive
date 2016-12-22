@@ -1,5 +1,5 @@
 # Cloud-Drive
-A to-do list App made with Flask and JavaScript.
+A minimal photo upload and manage system with Flask and Flask-Uploads (Multiple file upload support!).
 
 ## Extensions
 Flask==0.11.1  
