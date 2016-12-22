@@ -1,0 +1,3 @@
+Flask==0.11.1
+Flask-Uploads==0.2.1
+Flask-WTF==0.13.1
