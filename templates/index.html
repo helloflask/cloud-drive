@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>Upload File</title>
+<h1>Upload File</h1>
+<a href="{{ url_for('upload_file') }}">Upload</a> /
+<a href="{{ url_for('manage_file') }}">Manage</a>
+<hr>
+
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.photo(multiple="multiple")}}
+    {% for error in form.photo.errors %}
+        <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    {{ form.submit }}
+</form>
+
+{% if success %}
+<br>
+<p>Upload Success!</p>
+{% endif %}

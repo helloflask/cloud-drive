@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<title>File Manager</title>
+<h1>File Manager</h1>
+<a href="{{ url_for('upload_file') }}">Upload</a> /
+<a href="{{ url_for('manage_file') }}">Manage</a>
+<hr>
+
+{% for photo in files_list %}
+    - {{ photo }}
+    <a href="{{ url_for('open_file', filename=photo) }}">open</a>
+    <a href="{{ url_for('delete_file', filename=photo) }}">del</a><br>
+{% endfor %}
