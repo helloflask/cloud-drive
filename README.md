@@ -1,8 +1,7 @@
 # Cloud-Drive
 A minimal photo upload and manage system with Flask and Flask-Uploads (Multiple file upload support!).
 
-## Extensions
-Flask==0.11.1  
+## Extensions 
 Flask-Uploads==0.2.1  
 Flask-WTF==0.13.1
 
